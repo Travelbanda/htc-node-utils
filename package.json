@@ -1,0 +1,16 @@
+{
+  "name": "htc-node-utils",
+  "version": "1.0.0",
+  "description": "utils for node from htc",
+  "main": "index.js",
+  "repository": "git@github.com:Travelbanda/htc-node-utils.git",
+  "author": "d.koltsov <d.koltsov@hotelchat.me>",
+  "license": "MIT",
+  "engines": {
+    "node": "^8.6.0",
+    "yarn": "^1.1.0"
+  },
+  "dependencies": {
+    "@types/node": "8.9.5"
+  }
+}
