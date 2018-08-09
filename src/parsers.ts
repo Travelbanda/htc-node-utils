@@ -1,6 +1,8 @@
+import { Middleware } from 'koa'
 import * as Body from 'koa-body'
 
-export const multipartParser = Body({
+
+export const multipartParser: Middleware = Body({
     formidable: {
         maxFieldsSize: 3 * 1024 * 1024,
         maxFields: 1,
@@ -12,7 +14,7 @@ export const multipartParser = Body({
     urlencoded: false,
 })
 
-export const jsonParser = Body({
+export const jsonParser: Middleware = Body({
     json: true,
     jsonLimit: 8 * 1024, // 8kb
     multipart: false,
@@ -20,7 +22,7 @@ export const jsonParser = Body({
     urlencoded: false,
 })
 
-export const formDataParser = Body({
+export const formDataParser: Middleware = Body({
     json: false,
     multipart: false,
     text: false,
