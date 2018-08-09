@@ -1,6 +1,6 @@
 {
   "name": "htc-node-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "utils for node from htc",
   "author": "d.koltsov <d.koltsov@hotelchat.me>",
   "license": "MIT",
