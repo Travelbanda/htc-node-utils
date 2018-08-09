@@ -1,6 +1,6 @@
 {
   "name": "htc-node-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "utils for node from htc",
   "author": "d.koltsov <d.koltsov@hotelchat.me>",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "yarn": "^1.1.0"
   },
   "scripts": {
-    "build": "tsc -d -p src --outDir dist",
+    "build": "tsc -d -p src --outDir .",
     "compile": "tsc --noEmit -p .",
     "lint": "tslint -p src && tslint -p test && tslint webpack.config.js",
     "lint-fix": "tslint --fix -p src -t verbose",
@@ -20,10 +20,11 @@
     "url": "git+ssh://git@github.com:Travelbanda/htc-node-utils.git"
   },
   "files": [
-    "dist"
+    "*.js",
+    "*.js.map",
+    "*.d.ts"
   ],
   "devDependencies": {
-    "typescript": "2.9.2",
     "@types/koa": "2.0.46",
     "@types/koa-router": "7.0.30",
     "@types/mongodb": "3.1.1",
@@ -32,7 +33,8 @@
     "koa-body": "^4.0.4",
     "koa-router": "^7.4.0",
     "mongodb": "^3.1.1",
-    "raven": "^2.6.3"
+    "raven": "^2.6.3",
+    "typescript": "2.9.2"
   },
   "peerDependencies": {
     "@types/koa": "*",
