@@ -6,6 +6,8 @@ dist
 .nyc_output
 coverage
 
-dist
+*.d.ts
+*.js
+*.js.map
 
 yarn-error.log
