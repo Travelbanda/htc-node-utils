@@ -111,7 +111,7 @@ export const respondForFindOneAndUpdate = (
         respond500(ctx)
         return
     }
-    if (result.value == null) {
+    if (result.value === null || result.value === undefined) {
         respond404(ctx)
         return
     }
