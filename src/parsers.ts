@@ -16,7 +16,7 @@ export const multipartParser: Middleware = Body({
 
 export const jsonParser: Middleware = Body({
     json: true,
-    jsonLimit: 8 * 1024, // 8kb
+    jsonLimit: 32 * 1024, // 64kb
     multipart: false,
     text: false,
     urlencoded: false,
